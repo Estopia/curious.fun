@@ -9,8 +9,13 @@ const experiences = [
   },
   {
     title: "Spend a Trillion Lite",
-    description: "try to spend an absurd budget",
+    description: "Can you spend $1,000,000,000,000?",
     href: "/experiences/spend-a-trillion-lite"
+  },
+  {
+    title: "Democracy in Numbers",
+    description: "Explore the EIU Democracy Index 2024 across 167 countries",
+    href: "/experiences/democracy-in-numbers"
   },
   {
     title: "Internet Minute",

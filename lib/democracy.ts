@@ -1,0 +1,2561 @@
+// Auto-generated from EIU Democracy Index 2024, Table 2
+// Schema and data for curious.fun "Democracy in Numbers"
+
+export type Regime = "full" | "flawed" | "hybrid" | "authoritarian";
+
+export type Categories = {
+  electoralProcess: number;
+  government: number;
+  participation: number;
+  culture: number;
+  liberties: number;
+};
+
+export type CountryRow = {
+  name: string;
+  score: number;
+  rank: number | null;
+  rankRaw: string;
+  rankChange: number;
+  regime: Regime;
+  categories: Categories;
+};
+
+export const meta = {
+  "globalAverage2024": 5.17,
+  "globalAverage2023": 5.23,
+  "regimes": [
+    {
+      "id": "full",
+      "label": "Full democracies",
+      "countries": 25,
+      "populationPct": 6.6
+    },
+    {
+      "id": "flawed",
+      "label": "Flawed democracies",
+      "countries": 46,
+      "populationPct": 38.4
+    },
+    {
+      "id": "hybrid",
+      "label": "Hybrid regimes",
+      "countries": 36,
+      "populationPct": 15.7
+    },
+    {
+      "id": "authoritarian",
+      "label": "Authoritarian regimes",
+      "countries": 60,
+      "populationPct": 39.2
+    }
+  ]
+} as const;
+
+export const countries: CountryRow[] = [
+  {
+    "name": "Democracy Index 2024 Overall score Rank Change in rank from previous year I Electoral process and pluralism II Functioning of government III Political participation IV Political culture V Civil liberties Norway",
+    "score": 9.81,
+    "rank": 1,
+    "rankRaw": "1",
+    "rankChange": 0,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 10.0,
+      "government": 9.64,
+      "participation": 10.0,
+      "culture": 10.0,
+      "liberties": 9.41
+    }
+  },
+  {
+    "name": "New Zealand",
+    "score": 9.61,
+    "rank": 2,
+    "rankRaw": "2",
+    "rankChange": 0,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 10.0,
+      "government": 9.29,
+      "participation": 10.0,
+      "culture": 8.75,
+      "liberties": 10.0
+    }
+  },
+  {
+    "name": "Sweden",
+    "score": 9.39,
+    "rank": 3,
+    "rankRaw": "3",
+    "rankChange": 1,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 9.64,
+      "participation": 8.33,
+      "culture": 10.0,
+      "liberties": 9.41
+    }
+  },
+  {
+    "name": "Iceland",
+    "score": 9.38,
+    "rank": 4,
+    "rankRaw": "4",
+    "rankChange": -1,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 10.0,
+      "government": 8.93,
+      "participation": 8.89,
+      "culture": 9.38,
+      "liberties": 9.71
+    }
+  },
+  {
+    "name": "Switzerland",
+    "score": 9.32,
+    "rank": 5,
+    "rankRaw": "5",
+    "rankChange": 3,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 9.29,
+      "participation": 8.33,
+      "culture": 10.0,
+      "liberties": 9.41
+    }
+  },
+  {
+    "name": "Finland",
+    "score": 9.3,
+    "rank": 6,
+    "rankRaw": "6",
+    "rankChange": -1,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 10.0,
+      "government": 9.64,
+      "participation": 7.78,
+      "culture": 9.38,
+      "liberties": 9.71
+    }
+  },
+  {
+    "name": "Denmark",
+    "score": 9.28,
+    "rank": 7,
+    "rankRaw": "7",
+    "rankChange": -1,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 10.0,
+      "government": 9.29,
+      "participation": 8.33,
+      "culture": 9.38,
+      "liberties": 9.41
+    }
+  },
+  {
+    "name": "Ireland",
+    "score": 9.19,
+    "rank": 8,
+    "rankRaw": "8",
+    "rankChange": -1,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 10.0,
+      "government": 8.21,
+      "participation": 8.33,
+      "culture": 10.0,
+      "liberties": 9.41
+    }
+  },
+  {
+    "name": "Netherlands",
+    "score": 9.0,
+    "rank": 9,
+    "rankRaw": "9",
+    "rankChange": 0,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 8.93,
+      "participation": 8.33,
+      "culture": 8.75,
+      "liberties": 9.41
+    }
+  },
+  {
+    "name": "Luxembourg",
+    "score": 8.88,
+    "rank": 10,
+    "rankRaw": "10",
+    "rankChange": 1,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 10.0,
+      "government": 9.29,
+      "participation": 6.67,
+      "culture": 8.75,
+      "liberties": 9.71
+    }
+  },
+  {
+    "name": "Australia",
+    "score": 8.85,
+    "rank": 11,
+    "rankRaw": "11",
+    "rankChange": 3,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 10.0,
+      "government": 8.57,
+      "participation": 7.22,
+      "culture": 8.75,
+      "liberties": 9.71
+    }
+  },
+  {
+    "name": "Taiwan",
+    "score": 8.78,
+    "rank": 12,
+    "rankRaw": "12",
+    "rankChange": -2,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 10.0,
+      "government": 8.57,
+      "participation": 7.78,
+      "culture": 8.13,
+      "liberties": 9.41
+    }
+  },
+  {
+    "name": "Germany",
+    "score": 8.73,
+    "rank": 13,
+    "rankRaw": "13",
+    "rankChange": -1,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 8.21,
+      "participation": 8.33,
+      "culture": 8.13,
+      "liberties": 9.41
+    }
+  },
+  {
+    "name": "Canada",
+    "score": 8.69,
+    "rank": 14,
+    "rankRaw": "14",
+    "rankChange": -1,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 10.0,
+      "government": 8.21,
+      "participation": 8.89,
+      "culture": 7.5,
+      "liberties": 8.82
+    }
+  },
+  {
+    "name": "Uruguay",
+    "score": 8.67,
+    "rank": 15,
+    "rankRaw": "15",
+    "rankChange": -1,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 10.0,
+      "government": 9.29,
+      "participation": 7.78,
+      "culture": 6.88,
+      "liberties": 9.41
+    }
+  },
+  {
+    "name": "Japan",
+    "score": 8.48,
+    "rank": 16,
+    "rankRaw": "16",
+    "rankChange": 0,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 8.93,
+      "participation": 6.67,
+      "culture": 8.13,
+      "liberties": 9.12
+    }
+  },
+  {
+    "name": "United Kingdom",
+    "score": 8.34,
+    "rank": 17,
+    "rankRaw": "17",
+    "rankChange": 1,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 7.5,
+      "participation": 8.33,
+      "culture": 6.88,
+      "liberties": 9.41
+    }
+  },
+  {
+    "name": "Costa Rica",
+    "score": 8.29,
+    "rank": 18,
+    "rankRaw": "18",
+    "rankChange": -1,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 7.5,
+      "participation": 7.78,
+      "culture": 6.88,
+      "liberties": 9.71
+    }
+  },
+  {
+    "name": "Austria",
+    "score": 8.28,
+    "rank": 19,
+    "rankRaw": "19",
+    "rankChange": -1,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 7.5,
+      "participation": 8.89,
+      "culture": 6.88,
+      "liberties": 8.53
+    }
+  },
+  {
+    "name": "Mauritius",
+    "score": 8.23,
+    "rank": 20,
+    "rankRaw": "20",
+    "rankChange": 0,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 7.86,
+      "participation": 6.11,
+      "culture": 8.75,
+      "liberties": 8.82
+    }
+  },
+  {
+    "name": "Estonia",
+    "score": 8.13,
+    "rank": 21,
+    "rankRaw": "21=",
+    "rankChange": 6,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 10.0,
+      "government": 8.57,
+      "participation": 6.67,
+      "culture": 6.88,
+      "liberties": 8.53
+    }
+  },
+  {
+    "name": "Spain",
+    "score": 8.13,
+    "rank": 21,
+    "rankRaw": "21=",
+    "rankChange": 2,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 7.5,
+      "participation": 7.22,
+      "culture": 7.5,
+      "liberties": 8.82
+    }
+  },
+  {
+    "name": "Czech Republic",
+    "score": 8.08,
+    "rank": 23,
+    "rankRaw": "23=",
+    "rankChange": 3,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 6.43,
+      "participation": 7.78,
+      "culture": 7.5,
+      "liberties": 9.12
+    }
+  },
+  {
+    "name": "Portugal",
+    "score": 8.08,
+    "rank": 23,
+    "rankRaw": "23=",
+    "rankChange": 8,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 7.14,
+      "participation": 6.11,
+      "culture": 8.75,
+      "liberties": 8.82
+    }
+  },
+  {
+    "name": "Greece",
+    "score": 8.07,
+    "rank": 25,
+    "rankRaw": "25",
+    "rankChange": -5,
+    "regime": "full",
+    "categories": {
+      "electoralProcess": 10.0,
+      "government": 6.79,
+      "participation": 7.22,
+      "culture": 7.5,
+      "liberties": 8.82
+    }
+  },
+  {
+    "name": "France",
+    "score": 7.99,
+    "rank": 26,
+    "rankRaw": "26",
+    "rankChange": -3,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 7.5,
+      "participation": 7.78,
+      "culture": 6.88,
+      "liberties": 8.24
+    }
+  },
+  {
+    "name": "Malta",
+    "score": 7.93,
+    "rank": 27,
+    "rankRaw": "27",
+    "rankChange": 1,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.17,
+      "government": 7.14,
+      "participation": 6.67,
+      "culture": 8.13,
+      "liberties": 8.53
+    }
+  },
+  {
+    "name": "United States of America",
+    "score": 7.85,
+    "rank": 28,
+    "rankRaw": "28",
+    "rankChange": 1,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.17,
+      "government": 6.43,
+      "participation": 8.89,
+      "culture": 6.25,
+      "liberties": 8.53
+    }
+  },
+  {
+    "name": "Chile",
+    "score": 7.83,
+    "rank": 29,
+    "rankRaw": "29",
+    "rankChange": -4,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 7.86,
+      "participation": 6.67,
+      "culture": 5.63,
+      "liberties": 9.41
+    }
+  },
+  {
+    "name": "Slovenia",
+    "score": 7.82,
+    "rank": 30,
+    "rankRaw": "30",
+    "rankChange": 1,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 7.5,
+      "participation": 7.22,
+      "culture": 6.25,
+      "liberties": 8.53
+    }
+  },
+  {
+    "name": "Israel",
+    "score": 7.8,
+    "rank": 31,
+    "rankRaw": "31",
+    "rankChange": -1,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 7.5,
+      "participation": 9.44,
+      "culture": 6.88,
+      "liberties": 5.59
+    }
+  },
+  {
+    "name": "South Korea",
+    "score": 7.75,
+    "rank": 32,
+    "rankRaw": "32",
+    "rankChange": -10,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 7.5,
+      "participation": 7.22,
+      "culture": 5.63,
+      "liberties": 8.82
+    }
+  },
+  {
+    "name": "Latvia",
+    "score": 7.66,
+    "rank": 33,
+    "rankRaw": "33",
+    "rankChange": 4,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 10.0,
+      "government": 7.14,
+      "participation": 6.67,
+      "culture": 6.25,
+      "liberties": 8.24
+    }
+  },
+  {
+    "name": "Belgium",
+    "score": 7.64,
+    "rank": 34,
+    "rankRaw": "34",
+    "rankChange": 2,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 8.21,
+      "participation": 5.0,
+      "culture": 6.88,
+      "liberties": 8.53
+    }
+  },
+  {
+    "name": "Botswana",
+    "score": 7.63,
+    "rank": 35,
+    "rankRaw": "35",
+    "rankChange": -2,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 6.43,
+      "participation": 6.11,
+      "culture": 7.5,
+      "liberties": 8.53
+    }
+  },
+  {
+    "name": "Lithuania",
+    "score": 7.59,
+    "rank": 36,
+    "rankRaw": "36",
+    "rankChange": 3,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 10.0,
+      "government": 7.14,
+      "participation": 6.67,
+      "culture": 5.63,
+      "liberties": 8.53
+    }
+  },
+  {
+    "name": "Cabo Verde",
+    "score": 7.58,
+    "rank": 37,
+    "rankRaw": "37=",
+    "rankChange": -2,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.17,
+      "government": 6.64,
+      "participation": 6.67,
+      "culture": 6.88,
+      "liberties": 8.53
+    }
+  },
+  {
+    "name": "Italy",
+    "score": 7.58,
+    "rank": 37,
+    "rankRaw": "37=",
+    "rankChange": -3,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 7.14,
+      "participation": 7.22,
+      "culture": 6.88,
+      "liberties": 7.06
+    }
+  },
+  {
+    "name": "Poland",
+    "score": 7.4,
+    "rank": 39,
+    "rankRaw": "39",
+    "rankChange": 2,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 10.0,
+      "government": 6.43,
+      "participation": 6.67,
+      "culture": 6.25,
+      "liberties": 7.65
+    }
+  },
+  {
+    "name": "Cyprus",
+    "score": 7.38,
+    "rank": 40,
+    "rankRaw": "40",
+    "rankChange": -3,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.17,
+      "government": 5.36,
+      "participation": 6.67,
+      "culture": 6.88,
+      "liberties": 8.82
+    }
+  },
+  {
+    "name": "India",
+    "score": 7.29,
+    "rank": 41,
+    "rankRaw": "41",
+    "rankChange": 0,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 8.67,
+      "government": 7.5,
+      "participation": 7.22,
+      "culture": 6.88,
+      "liberties": 6.18
+    }
+  },
+  {
+    "name": "Slovakia",
+    "score": 7.21,
+    "rank": 42,
+    "rankRaw": "42",
+    "rankChange": 2,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 10.0,
+      "government": 6.07,
+      "participation": 6.11,
+      "culture": 5.63,
+      "liberties": 8.24
+    }
+  },
+  {
+    "name": "South Africa",
+    "score": 7.16,
+    "rank": 43,
+    "rankRaw": "43",
+    "rankChange": 4,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.17,
+      "government": 6.79,
+      "participation": 7.78,
+      "culture": 5.0,
+      "liberties": 7.06
+    }
+  },
+  {
+    "name": "Malaysia",
+    "score": 7.11,
+    "rank": 44,
+    "rankRaw": "44",
+    "rankChange": -4,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 7.14,
+      "participation": 6.67,
+      "culture": 6.25,
+      "liberties": 5.88
+    }
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "score": 7.09,
+    "rank": 45,
+    "rankRaw": "45",
+    "rankChange": -2,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 6.79,
+      "participation": 6.11,
+      "culture": 5.63,
+      "liberties": 7.35
+    }
+  },
+  {
+    "name": "Timor-Leste",
+    "score": 7.03,
+    "rank": 46,
+    "rankRaw": "46",
+    "rankChange": -1,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 6.07,
+      "participation": 5.56,
+      "culture": 6.88,
+      "liberties": 7.06
+    }
+  },
+  {
+    "name": "Panama",
+    "score": 6.84,
+    "rank": 47,
+    "rankRaw": "47",
+    "rankChange": 1,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 5.71,
+      "participation": 7.22,
+      "culture": 3.75,
+      "liberties": 7.94
+    }
+  },
+  {
+    "name": "Suriname",
+    "score": 6.79,
+    "rank": 48,
+    "rankRaw": "48",
+    "rankChange": 1,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 5.36,
+      "participation": 6.67,
+      "culture": 5.0,
+      "liberties": 7.35
+    }
+  },
+  {
+    "name": "Jamaica",
+    "score": 6.74,
+    "rank": 49,
+    "rankRaw": "49",
+    "rankChange": -4,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 8.75,
+      "government": 6.43,
+      "participation": 5.0,
+      "culture": 5.0,
+      "liberties": 8.53
+    }
+  },
+  {
+    "name": "Montenegro",
+    "score": 6.73,
+    "rank": 50,
+    "rankRaw": "50",
+    "rankChange": 2,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 8.75,
+      "government": 7.14,
+      "participation": 6.67,
+      "culture": 3.75,
+      "liberties": 7.35
+    }
+  },
+  {
+    "name": "Philippines",
+    "score": 6.63,
+    "rank": 51,
+    "rankRaw": "51",
+    "rankChange": 2,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 8.75,
+      "government": 4.64,
+      "participation": 8.33,
+      "culture": 4.38,
+      "liberties": 7.06
+    }
+  },
+  {
+    "name": "Dominican Republic",
+    "score": 6.62,
+    "rank": 52,
+    "rankRaw": "52",
+    "rankChange": 9,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.17,
+      "government": 5.0,
+      "participation": 7.22,
+      "culture": 4.38,
+      "liberties": 7.35
+    }
+  },
+  {
+    "name": "Mongolia",
+    "score": 6.53,
+    "rank": 53,
+    "rankRaw": "53",
+    "rankChange": 6,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 8.75,
+      "government": 5.71,
+      "participation": 6.67,
+      "culture": 5.63,
+      "liberties": 5.88
+    }
+  },
+  {
+    "name": "Argentina",
+    "score": 6.51,
+    "rank": 54,
+    "rankRaw": "54=",
+    "rankChange": 0,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.17,
+      "government": 5.0,
+      "participation": 6.11,
+      "culture": 3.75,
+      "liberties": 8.53
+    }
+  },
+  {
+    "name": "Hungary",
+    "score": 6.51,
+    "rank": 54,
+    "rankRaw": "54=",
+    "rankChange": -4,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 8.75,
+      "government": 5.71,
+      "participation": 4.44,
+      "culture": 6.88,
+      "liberties": 6.76
+    }
+  },
+  {
+    "name": "Croatia",
+    "score": 6.5,
+    "rank": 56,
+    "rankRaw": "56",
+    "rankChange": 2,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.17,
+      "government": 6.07,
+      "participation": 6.11,
+      "culture": 4.38,
+      "liberties": 6.76
+    }
+  },
+  {
+    "name": "Brazil",
+    "score": 6.49,
+    "rank": 57,
+    "rankRaw": "57",
+    "rankChange": -6,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.58,
+      "government": 5.0,
+      "participation": 6.11,
+      "culture": 5.0,
+      "liberties": 6.76
+    }
+  },
+  {
+    "name": "Namibia",
+    "score": 6.48,
+    "rank": 58,
+    "rankRaw": "58",
+    "rankChange": -1,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 7.42,
+      "government": 5.36,
+      "participation": 6.67,
+      "culture": 5.0,
+      "liberties": 7.94
+    }
+  },
+  {
+    "name": "Indonesia",
+    "score": 6.44,
+    "rank": 59,
+    "rankRaw": "59",
+    "rankChange": -3,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 7.92,
+      "government": 6.79,
+      "participation": 7.22,
+      "culture": 5.0,
+      "liberties": 5.29
+    }
+  },
+  {
+    "name": "Colombia",
+    "score": 6.35,
+    "rank": 60,
+    "rankRaw": "60",
+    "rankChange": -5,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.17,
+      "government": 5.71,
+      "participation": 6.11,
+      "culture": 3.13,
+      "liberties": 7.65
+    }
+  },
+  {
+    "name": "Bulgaria",
+    "score": 6.34,
+    "rank": 61,
+    "rankRaw": "61",
+    "rankChange": 1,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 8.75,
+      "government": 5.36,
+      "participation": 5.56,
+      "culture": 4.38,
+      "liberties": 7.65
+    }
+  },
+  {
+    "name": "North Macedonia",
+    "score": 6.28,
+    "rank": 62,
+    "rankRaw": "62",
+    "rankChange": 10,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 8.75,
+      "government": 6.07,
+      "participation": 6.11,
+      "culture": 3.13,
+      "liberties": 7.35
+    }
+  },
+  {
+    "name": "Thailand",
+    "score": 6.27,
+    "rank": 63,
+    "rankRaw": "63",
+    "rankChange": 0,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 6.5,
+      "government": 5.0,
+      "participation": 8.33,
+      "culture": 5.63,
+      "liberties": 5.88
+    }
+  },
+  {
+    "name": "Serbia",
+    "score": 6.26,
+    "rank": 64,
+    "rankRaw": "64",
+    "rankChange": 0,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 7.83,
+      "government": 5.71,
+      "participation": 6.67,
+      "culture": 3.75,
+      "liberties": 7.35
+    }
+  },
+  {
+    "name": "Ghana",
+    "score": 6.24,
+    "rank": 65,
+    "rankRaw": "65",
+    "rankChange": 0,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 8.33,
+      "government": 4.64,
+      "participation": 6.11,
+      "culture": 6.25,
+      "liberties": 5.88
+    }
+  },
+  {
+    "name": "Albania",
+    "score": 6.2,
+    "rank": 66,
+    "rankRaw": "66",
+    "rankChange": 0,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 7.0,
+      "government": 5.71,
+      "participation": 5.0,
+      "culture": 6.25,
+      "liberties": 7.06
+    }
+  },
+  {
+    "name": "Sri Lanka",
+    "score": 6.19,
+    "rank": 67,
+    "rankRaw": "67",
+    "rankChange": 3,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 7.0,
+      "government": 4.29,
+      "participation": 7.22,
+      "culture": 6.25,
+      "liberties": 6.18
+    }
+  },
+  {
+    "name": "Singapore",
+    "score": 6.18,
+    "rank": 68,
+    "rankRaw": "68",
+    "rankChange": 1,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 5.33,
+      "government": 7.14,
+      "participation": 4.44,
+      "culture": 7.5,
+      "liberties": 6.47
+    }
+  },
+  {
+    "name": "Guyana",
+    "score": 6.11,
+    "rank": 69,
+    "rankRaw": "69",
+    "rankChange": -2,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 6.92,
+      "government": 6.07,
+      "participation": 6.11,
+      "culture": 5.0,
+      "liberties": 6.47
+    }
+  },
+  {
+    "name": "Lesotho",
+    "score": 6.06,
+    "rank": 70,
+    "rankRaw": "70",
+    "rankChange": 1,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 9.17,
+      "government": 3.79,
+      "participation": 5.56,
+      "culture": 5.63,
+      "liberties": 6.18
+    }
+  },
+  {
+    "name": "Moldova",
+    "score": 6.04,
+    "rank": 71,
+    "rankRaw": "71",
+    "rankChange": -3,
+    "regime": "flawed",
+    "categories": {
+      "electoralProcess": 6.5,
+      "government": 5.36,
+      "participation": 7.22,
+      "culture": 4.38,
+      "liberties": 6.76
+    }
+  },
+  {
+    "name": "Romania",
+    "score": 5.99,
+    "rank": 72,
+    "rankRaw": "72",
+    "rankChange": -12,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 8.25,
+      "government": 5.36,
+      "participation": 5.56,
+      "culture": 3.75,
+      "liberties": 7.06
+    }
+  },
+  {
+    "name": "Papua New Guinea",
+    "score": 5.97,
+    "rank": 73,
+    "rankRaw": "73",
+    "rankChange": -1,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 6.92,
+      "government": 6.07,
+      "participation": 3.89,
+      "culture": 5.63,
+      "liberties": 7.35
+    }
+  },
+  {
+    "name": "Senegal",
+    "score": 5.93,
+    "rank": 74,
+    "rankRaw": "74",
+    "rankChange": 9,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 7.42,
+      "government": 5.36,
+      "participation": 4.44,
+      "culture": 6.25,
+      "liberties": 6.18
+    }
+  },
+  {
+    "name": "Paraguay",
+    "score": 5.92,
+    "rank": 75,
+    "rankRaw": "75",
+    "rankChange": -1,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 8.33,
+      "government": 5.36,
+      "participation": 6.67,
+      "culture": 1.88,
+      "liberties": 7.35
+    }
+  },
+  {
+    "name": "Malawi",
+    "score": 5.85,
+    "rank": 76,
+    "rankRaw": "76",
+    "rankChange": 0,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 7.0,
+      "government": 4.29,
+      "participation": 5.56,
+      "culture": 6.25,
+      "liberties": 6.18
+    }
+  },
+  {
+    "name": "Zambia",
+    "score": 5.73,
+    "rank": 77,
+    "rankRaw": "77",
+    "rankChange": 1,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 7.92,
+      "government": 3.29,
+      "participation": 5.0,
+      "culture": 6.88,
+      "liberties": 5.59
+    }
+  },
+  {
+    "name": "Peru",
+    "score": 5.69,
+    "rank": 78,
+    "rankRaw": "78",
+    "rankChange": -1,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 8.75,
+      "government": 5.71,
+      "participation": 5.0,
+      "culture": 2.5,
+      "liberties": 6.47
+    }
+  },
+  {
+    "name": "Bhutan",
+    "score": 5.65,
+    "rank": 79,
+    "rankRaw": "79",
+    "rankChange": 2,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 8.75,
+      "government": 5.93,
+      "participation": 3.89,
+      "culture": 5.0,
+      "liberties": 4.71
+    }
+  },
+  {
+    "name": "Liberia",
+    "score": 5.57,
+    "rank": 80,
+    "rankRaw": "80",
+    "rankChange": -1,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 7.83,
+      "government": 2.71,
+      "participation": 6.11,
+      "culture": 5.63,
+      "liberties": 5.59
+    }
+  },
+  {
+    "name": "Fiji",
+    "score": 5.39,
+    "rank": 81,
+    "rankRaw": "81",
+    "rankChange": -1,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 6.58,
+      "government": 5.0,
+      "participation": 4.44,
+      "culture": 5.63,
+      "liberties": 5.29
+    }
+  },
+  {
+    "name": "Armenia",
+    "score": 5.35,
+    "rank": 82,
+    "rankRaw": "82",
+    "rankChange": 2,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 7.92,
+      "government": 4.29,
+      "participation": 6.11,
+      "culture": 3.13,
+      "liberties": 5.29
+    }
+  },
+  {
+    "name": "Madagascar",
+    "score": 5.33,
+    "rank": 83,
+    "rankRaw": "83",
+    "rankChange": 4,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 6.58,
+      "government": 3.93,
+      "participation": 6.11,
+      "culture": 5.63,
+      "liberties": 4.41
+    }
+  },
+  {
+    "name": "Mexico",
+    "score": 5.32,
+    "rank": 84,
+    "rankRaw": "84",
+    "rankChange": 6,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 6.92,
+      "government": 5.0,
+      "participation": 7.22,
+      "culture": 1.88,
+      "liberties": 5.59
+    }
+  },
+  {
+    "name": "Ecuador",
+    "score": 5.24,
+    "rank": 85,
+    "rankRaw": "85",
+    "rankChange": 0,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 8.75,
+      "government": 5.0,
+      "participation": 5.56,
+      "culture": 1.88,
+      "liberties": 5.0
+    }
+  },
+  {
+    "name": "Tanzania",
+    "score": 5.2,
+    "rank": 86,
+    "rankRaw": "86",
+    "rankChange": 0,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 4.42,
+      "government": 5.0,
+      "participation": 5.0,
+      "culture": 6.88,
+      "liberties": 4.71
+    }
+  },
+  {
+    "name": "Hong Kong",
+    "score": 5.09,
+    "rank": 87,
+    "rankRaw": "87",
+    "rankChange": 1,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 2.75,
+      "government": 4.0,
+      "participation": 3.89,
+      "culture": 6.88,
+      "liberties": 7.94
+    }
+  },
+  {
+    "name": "Bosnia and Hercegovina",
+    "score": 5.06,
+    "rank": 88,
+    "rankRaw": "88",
+    "rankChange": 6,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 7.0,
+      "government": 3.64,
+      "participation": 5.0,
+      "culture": 3.75,
+      "liberties": 5.88
+    }
+  },
+  {
+    "name": "Kenya",
+    "score": 5.05,
+    "rank": 89,
+    "rankRaw": "89",
+    "rankChange": 3,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 3.5,
+      "government": 5.36,
+      "participation": 6.67,
+      "culture": 5.63,
+      "liberties": 4.12
+    }
+  },
+  {
+    "name": "Honduras",
+    "score": 4.98,
+    "rank": 90,
+    "rankRaw": "90",
+    "rankChange": 5,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 8.75,
+      "government": 3.93,
+      "participation": 4.44,
+      "culture": 2.5,
+      "liberties": 5.29
+    }
+  },
+  {
+    "name": "Morocco",
+    "score": 4.97,
+    "rank": 91,
+    "rankRaw": "91",
+    "rankChange": 2,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 5.25,
+      "government": 4.29,
+      "participation": 5.56,
+      "culture": 5.63,
+      "liberties": 4.12
+    }
+  },
+  {
+    "name": "Ukraine",
+    "score": 4.9,
+    "rank": 92,
+    "rankRaw": "92",
+    "rankChange": -1,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 5.17,
+      "government": 2.71,
+      "participation": 7.22,
+      "culture": 5.0,
+      "liberties": 4.41
+    }
+  },
+  {
+    "name": "Tunisia",
+    "score": 4.71,
+    "rank": 93,
+    "rankRaw": "93",
+    "rankChange": -11,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 3.42,
+      "government": 3.93,
+      "participation": 5.56,
+      "culture": 5.63,
+      "liberties": 5.0
+    }
+  },
+  {
+    "name": "Georgia",
+    "score": 4.7,
+    "rank": 94,
+    "rankRaw": "94",
+    "rankChange": -5,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 5.67,
+      "government": 3.21,
+      "participation": 5.56,
+      "culture": 3.75,
+      "liberties": 5.29
+    }
+  },
+  {
+    "name": "El Salvador",
+    "score": 4.61,
+    "rank": 95,
+    "rankRaw": "95",
+    "rankChange": 1,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 6.17,
+      "government": 3.21,
+      "participation": 5.56,
+      "culture": 3.13,
+      "liberties": 5.0
+    }
+  },
+  {
+    "name": "Nepal",
+    "score": 4.6,
+    "rank": 96,
+    "rankRaw": "96",
+    "rankChange": 2,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 4.83,
+      "government": 5.36,
+      "participation": 5.0,
+      "culture": 2.5,
+      "liberties": 5.29
+    }
+  },
+  {
+    "name": "Guatemala",
+    "score": 4.55,
+    "rank": 97,
+    "rankRaw": "97",
+    "rankChange": 3,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 6.08,
+      "government": 3.93,
+      "participation": 5.0,
+      "culture": 1.88,
+      "liberties": 5.88
+    }
+  },
+  {
+    "name": "Uganda",
+    "score": 4.49,
+    "rank": 98,
+    "rankRaw": "98",
+    "rankChange": 1,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 3.42,
+      "government": 3.57,
+      "participation": 3.89,
+      "culture": 6.88,
+      "liberties": 4.71
+    }
+  },
+  {
+    "name": "Gambia",
+    "score": 4.47,
+    "rank": 99,
+    "rankRaw": "99",
+    "rankChange": 1,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 4.42,
+      "government": 4.29,
+      "participation": 3.89,
+      "culture": 5.63,
+      "liberties": 4.12
+    }
+  },
+  {
+    "name": "Bangladesh",
+    "score": 4.44,
+    "rank": 100,
+    "rankRaw": "100=",
+    "rankChange": -25,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 6.08,
+      "government": 2.57,
+      "participation": 5.0,
+      "culture": 5.0,
+      "liberties": 3.53
+    }
+  },
+  {
+    "name": "Benin",
+    "score": 4.44,
+    "rank": 100,
+    "rankRaw": "100=",
+    "rankChange": -3,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 1.75,
+      "government": 5.36,
+      "participation": 4.44,
+      "culture": 6.25,
+      "liberties": 4.41
+    }
+  },
+  {
+    "name": "Sierra Leone",
+    "score": 4.32,
+    "rank": 102,
+    "rankRaw": "102",
+    "rankChange": 1,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 4.83,
+      "government": 2.86,
+      "participation": 3.89,
+      "culture": 5.0,
+      "liberties": 5.0
+    }
+  },
+  {
+    "name": "Bolivia",
+    "score": 4.26,
+    "rank": 103,
+    "rankRaw": "103=",
+    "rankChange": 3,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 4.33,
+      "government": 3.93,
+      "participation": 5.56,
+      "culture": 1.88,
+      "liberties": 5.59
+    }
+  },
+  {
+    "name": "Turkey",
+    "score": 4.26,
+    "rank": 103,
+    "rankRaw": "103=",
+    "rankChange": -1,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 3.5,
+      "government": 4.64,
+      "participation": 6.11,
+      "culture": 5.0,
+      "liberties": 2.06
+    }
+  },
+  {
+    "name": "Côte d’Ivoire",
+    "score": 4.22,
+    "rank": 105,
+    "rankRaw": "105",
+    "rankChange": 0,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 4.33,
+      "government": 2.86,
+      "participation": 4.44,
+      "culture": 5.63,
+      "liberties": 3.82
+    }
+  },
+  {
+    "name": "Nigeria",
+    "score": 4.16,
+    "rank": 106,
+    "rankRaw": "106",
+    "rankChange": -2,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 5.17,
+      "government": 3.57,
+      "participation": 3.89,
+      "culture": 3.75,
+      "liberties": 4.41
+    }
+  },
+  {
+    "name": "Angola",
+    "score": 4.05,
+    "rank": 107,
+    "rankRaw": "107",
+    "rankChange": 0,
+    "regime": "hybrid",
+    "categories": {
+      "electoralProcess": 4.5,
+      "government": 2.86,
+      "participation": 5.56,
+      "culture": 5.0,
+      "liberties": 2.35
+    }
+  },
+  {
+    "name": "Mauritania",
+    "score": 3.96,
+    "rank": 108,
+    "rankRaw": "108",
+    "rankChange": 0,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 3.5,
+      "government": 3.21,
+      "participation": 5.56,
+      "culture": 3.13,
+      "liberties": 4.41
+    }
+  },
+  {
+    "name": "Lebanon",
+    "score": 3.56,
+    "rank": 109,
+    "rankRaw": "109",
+    "rankChange": 3,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 3.08,
+      "government": 0.79,
+      "participation": 6.67,
+      "culture": 3.13,
+      "liberties": 4.12
+    }
+  },
+  {
+    "name": "Algeria",
+    "score": 3.55,
+    "rank": 110,
+    "rankRaw": "110",
+    "rankChange": 0,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 3.08,
+      "government": 2.5,
+      "participation": 3.33,
+      "culture": 5.0,
+      "liberties": 3.82
+    }
+  },
+  {
+    "name": "Kyrgyz Republic",
+    "score": 3.52,
+    "rank": 111,
+    "rankRaw": "111",
+    "rankChange": -2,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 3.42,
+      "government": 1.86,
+      "participation": 3.89,
+      "culture": 3.13,
+      "liberties": 5.29
+    }
+  },
+  {
+    "name": "Palestine",
+    "score": 3.44,
+    "rank": 112,
+    "rankRaw": "112",
+    "rankChange": 3,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 1.58,
+      "government": 0.0,
+      "participation": 8.33,
+      "culture": 3.75,
+      "liberties": 3.53
+    }
+  },
+  {
+    "name": "Mozambique",
+    "score": 3.38,
+    "rank": 113,
+    "rankRaw": "113",
+    "rankChange": 0,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 1.67,
+      "government": 1.43,
+      "participation": 5.56,
+      "culture": 5.0,
+      "liberties": 3.24
+    }
+  },
+  {
+    "name": "Rwanda",
+    "score": 3.34,
+    "rank": 114,
+    "rankRaw": "114",
+    "rankChange": 3,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 1.42,
+      "government": 4.29,
+      "participation": 3.33,
+      "culture": 5.0,
+      "liberties": 2.65
+    }
+  },
+  {
+    "name": "Jordan",
+    "score": 3.28,
+    "rank": 115,
+    "rankRaw": "115",
+    "rankChange": 7,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 3.08,
+      "government": 2.86,
+      "participation": 4.44,
+      "culture": 2.5,
+      "liberties": 3.53
+    }
+  },
+  {
+    "name": "Ethiopia",
+    "score": 3.24,
+    "rank": 116,
+    "rankRaw": "116",
+    "rankChange": 0,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.42,
+      "government": 2.86,
+      "participation": 6.11,
+      "culture": 5.63,
+      "liberties": 1.18
+    }
+  },
+  {
+    "name": "Qatar",
+    "score": 3.17,
+    "rank": 117,
+    "rankRaw": "117",
+    "rankChange": -6,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 3.93,
+      "participation": 2.78,
+      "culture": 5.63,
+      "liberties": 3.53
+    }
+  },
+  {
+    "name": "Kazakhstan",
+    "score": 3.08,
+    "rank": 118,
+    "rankRaw": "118",
+    "rankChange": 2,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.5,
+      "government": 3.21,
+      "participation": 5.0,
+      "culture": 3.75,
+      "liberties": 2.94
+    }
+  },
+  {
+    "name": "United Arab Emirates",
+    "score": 3.07,
+    "rank": 119,
+    "rankRaw": "119",
+    "rankChange": 6,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 4.29,
+      "participation": 2.78,
+      "culture": 5.63,
+      "liberties": 2.65
+    }
+  },
+  {
+    "name": "Oman",
+    "score": 3.05,
+    "rank": 120,
+    "rankRaw": "120",
+    "rankChange": -1,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.08,
+      "government": 3.57,
+      "participation": 2.78,
+      "culture": 5.0,
+      "liberties": 3.82
+    }
+  },
+  {
+    "name": "Togo",
+    "score": 2.99,
+    "rank": 121,
+    "rankRaw": "121",
+    "rankChange": 5,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.92,
+      "government": 2.14,
+      "participation": 3.33,
+      "culture": 5.63,
+      "liberties": 2.94
+    }
+  },
+  {
+    "name": "Zimbabwe",
+    "score": 2.98,
+    "rank": 122,
+    "rankRaw": "122",
+    "rankChange": 0,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 2.5,
+      "participation": 4.44,
+      "culture": 5.0,
+      "liberties": 2.94
+    }
+  },
+  {
+    "name": "Cambodia",
+    "score": 2.94,
+    "rank": 123,
+    "rankRaw": "123",
+    "rankChange": -2,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 2.36,
+      "participation": 5.0,
+      "culture": 5.0,
+      "liberties": 2.35
+    }
+  },
+  {
+    "name": "Comoros",
+    "score": 2.84,
+    "rank": 124,
+    "rankRaw": "124=",
+    "rankChange": -2,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.83,
+      "government": 2.21,
+      "participation": 3.89,
+      "culture": 3.75,
+      "liberties": 3.53
+    }
+  },
+  {
+    "name": "Pakistan",
+    "score": 2.84,
+    "rank": 124,
+    "rankRaw": "124=",
+    "rankChange": -6,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.83,
+      "government": 4.29,
+      "participation": 2.78,
+      "culture": 2.5,
+      "liberties": 3.82
+    }
+  },
+  {
+    "name": "Azerbaijan",
+    "score": 2.8,
+    "rank": 126,
+    "rankRaw": "126=",
+    "rankChange": 4,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.5,
+      "government": 2.5,
+      "participation": 3.33,
+      "culture": 5.0,
+      "liberties": 2.65
+    }
+  },
+  {
+    "name": "Iraq",
+    "score": 2.8,
+    "rank": 126,
+    "rankRaw": "126=",
+    "rankChange": 2,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 4.83,
+      "government": 0.0,
+      "participation": 6.11,
+      "culture": 1.88,
+      "liberties": 1.18
+    }
+  },
+  {
+    "name": "Congo (Brazzaville)",
+    "score": 2.79,
+    "rank": 128,
+    "rankRaw": "128=",
+    "rankChange": 3,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 2.5,
+      "participation": 4.44,
+      "culture": 3.75,
+      "liberties": 3.24
+    }
+  },
+  {
+    "name": "Egypt",
+    "score": 2.79,
+    "rank": 128,
+    "rankRaw": "128=",
+    "rankChange": -1,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.42,
+      "government": 2.86,
+      "participation": 3.89,
+      "culture": 5.0,
+      "liberties": 1.76
+    }
+  },
+  {
+    "name": "Kuwait",
+    "score": 2.78,
+    "rank": 130,
+    "rankRaw": "130",
+    "rankChange": -16,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.92,
+      "government": 3.21,
+      "participation": 2.78,
+      "culture": 3.75,
+      "liberties": 3.24
+    }
+  },
+  {
+    "name": "Haiti",
+    "score": 2.74,
+    "rank": 131,
+    "rankRaw": "131",
+    "rankChange": -2,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 0.29,
+      "participation": 2.78,
+      "culture": 5.63,
+      "liberties": 5.0
+    }
+  },
+  {
+    "name": "Djibouti",
+    "score": 2.7,
+    "rank": 132,
+    "rankRaw": "132",
+    "rankChange": 2,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 1.64,
+      "participation": 3.89,
+      "culture": 5.63,
+      "liberties": 2.35
+    }
+  },
+  {
+    "name": "Vietnam",
+    "score": 2.62,
+    "rank": 133,
+    "rankRaw": "133",
+    "rankChange": 3,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 3.93,
+      "participation": 2.78,
+      "culture": 3.75,
+      "liberties": 2.65
+    }
+  },
+  {
+    "name": "Eswatini",
+    "score": 2.6,
+    "rank": 134,
+    "rankRaw": "134",
+    "rankChange": -2,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 1.64,
+      "participation": 2.78,
+      "culture": 5.63,
+      "liberties": 2.94
+    }
+  },
+  {
+    "name": "Cuba",
+    "score": 2.58,
+    "rank": 135,
+    "rankRaw": "135",
+    "rankChange": 0,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 2.86,
+      "participation": 3.33,
+      "culture": 3.75,
+      "liberties": 2.94
+    }
+  },
+  {
+    "name": "Cameroon",
+    "score": 2.56,
+    "rank": 136,
+    "rankRaw": "136",
+    "rankChange": 2,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.33,
+      "government": 2.14,
+      "participation": 3.89,
+      "culture": 4.38,
+      "liberties": 2.06
+    }
+  },
+  {
+    "name": "Burkina Faso",
+    "score": 2.55,
+    "rank": 137,
+    "rankRaw": "137",
+    "rankChange": -4,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 2.14,
+      "participation": 3.33,
+      "culture": 3.75,
+      "liberties": 3.53
+    }
+  },
+  {
+    "name": "Bahrain",
+    "score": 2.45,
+    "rank": 138,
+    "rankRaw": "138",
+    "rankChange": 1,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.42,
+      "government": 2.36,
+      "participation": 3.33,
+      "culture": 4.38,
+      "liberties": 1.76
+    }
+  },
+  {
+    "name": "Mali",
+    "score": 2.4,
+    "rank": 139,
+    "rankRaw": "139",
+    "rankChange": -2,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 0.0,
+      "participation": 5.0,
+      "culture": 4.38,
+      "liberties": 2.65
+    }
+  },
+  {
+    "name": "Libya",
+    "score": 2.31,
+    "rank": 140,
+    "rankRaw": "140",
+    "rankChange": 17,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 1.25,
+      "government": 0.0,
+      "participation": 3.89,
+      "culture": 3.75,
+      "liberties": 2.65
+    }
+  },
+  {
+    "name": "Niger",
+    "score": 2.26,
+    "rank": 141,
+    "rankRaw": "141",
+    "rankChange": 0,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.33,
+      "government": 1.14,
+      "participation": 1.67,
+      "culture": 3.75,
+      "liberties": 4.41
+    }
+  },
+  {
+    "name": "Venezuela",
+    "score": 2.25,
+    "rank": 142,
+    "rankRaw": "142",
+    "rankChange": 0,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 1.07,
+      "participation": 5.0,
+      "culture": 3.13,
+      "liberties": 2.06
+    }
+  },
+  {
+    "name": "Gabon",
+    "score": 2.18,
+    "rank": 143,
+    "rankRaw": "143",
+    "rankChange": 3,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.83,
+      "government": 1.14,
+      "participation": 2.22,
+      "culture": 3.75,
+      "liberties": 2.94
+    }
+  },
+  {
+    "name": "Burundi",
+    "score": 2.13,
+    "rank": 144,
+    "rankRaw": "144",
+    "rankChange": 3,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 0.0,
+      "participation": 3.89,
+      "culture": 5.0,
+      "liberties": 1.76
+    }
+  },
+  {
+    "name": "China",
+    "score": 2.11,
+    "rank": 145,
+    "rankRaw": "145",
+    "rankChange": 3,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 3.21,
+      "participation": 3.33,
+      "culture": 3.13,
+      "liberties": 0.88
+    }
+  },
+  {
+    "name": "Uzbekistan",
+    "score": 2.1,
+    "rank": 146,
+    "rankRaw": "146",
+    "rankChange": 2,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 1.86,
+      "participation": 2.78,
+      "culture": 5.0,
+      "liberties": 0.88
+    }
+  },
+  {
+    "name": "Nicaragua",
+    "score": 2.09,
+    "rank": 147,
+    "rankRaw": "147",
+    "rankChange": -4,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 2.14,
+      "participation": 2.78,
+      "culture": 3.75,
+      "liberties": 1.76
+    }
+  },
+  {
+    "name": "Saudi Arabia",
+    "score": 2.08,
+    "rank": 148,
+    "rankRaw": "148",
+    "rankChange": 2,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 3.57,
+      "participation": 2.22,
+      "culture": 3.13,
+      "liberties": 1.47
+    }
+  },
+  {
+    "name": "Guinea",
+    "score": 2.04,
+    "rank": 149,
+    "rankRaw": "149",
+    "rankChange": -4,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 0.43,
+      "participation": 3.33,
+      "culture": 4.38,
+      "liberties": 2.06
+    }
+  },
+  {
+    "name": "Guinea-Bissau",
+    "score": 2.03,
+    "rank": 150,
+    "rankRaw": "150=",
+    "rankChange": -10,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 2.17,
+      "government": 0.0,
+      "participation": 2.78,
+      "culture": 3.13,
+      "liberties": 2.06
+    }
+  },
+  {
+    "name": "Russia",
+    "score": 2.03,
+    "rank": 150,
+    "rankRaw": "150=",
+    "rankChange": -6,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 2.14,
+      "participation": 2.22,
+      "culture": 3.75,
+      "liberties": 2.06
+    }
+  },
+  {
+    "name": "Belarus",
+    "score": 1.99,
+    "rank": 152,
+    "rankRaw": "152",
+    "rankChange": -1,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 0.79,
+      "participation": 3.33,
+      "culture": 4.38,
+      "liberties": 1.47
+    }
+  },
+  {
+    "name": "Eritrea",
+    "score": 1.97,
+    "rank": 153,
+    "rankRaw": "153",
+    "rankChange": -1,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 2.14,
+      "participation": 0.56,
+      "culture": 6.88,
+      "liberties": 0.29
+    }
+  },
+  {
+    "name": "Iran",
+    "score": 1.96,
+    "rank": 154,
+    "rankRaw": "154",
+    "rankChange": -1,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 2.5,
+      "participation": 3.33,
+      "culture": 2.5,
+      "liberties": 1.47
+    }
+  },
+  {
+    "name": "Yemen",
+    "score": 1.95,
+    "rank": 155,
+    "rankRaw": "155",
+    "rankChange": -1,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 0.0,
+      "participation": 3.89,
+      "culture": 5.0,
+      "liberties": 0.88
+    }
+  },
+  {
+    "name": "Democratic Republic of Congo",
+    "score": 1.92,
+    "rank": 156,
+    "rankRaw": "156=",
+    "rankChange": 4,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 2.08,
+      "government": 0.43,
+      "participation": 2.78,
+      "culture": 3.13,
+      "liberties": 1.18
+    }
+  },
+  {
+    "name": "Equatorial Guinea",
+    "score": 1.92,
+    "rank": 156,
+    "rankRaw": "156=",
+    "rankChange": 0,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 0.43,
+      "participation": 3.33,
+      "culture": 4.38,
+      "liberties": 1.47
+    }
+  },
+  {
+    "name": "Chad",
+    "score": 1.89,
+    "rank": 158,
+    "rankRaw": "158",
+    "rankChange": 3,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 0.0,
+      "participation": 3.33,
+      "culture": 3.75,
+      "liberties": 2.35
+    }
+  },
+  {
+    "name": "Tajikistan",
+    "score": 1.83,
+    "rank": 159,
+    "rankRaw": "159",
+    "rankChange": -4,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 2.21,
+      "participation": 1.67,
+      "culture": 4.38,
+      "liberties": 0.88
+    }
+  },
+  {
+    "name": "Laos",
+    "score": 1.71,
+    "rank": 160,
+    "rankRaw": "160",
+    "rankChange": -1,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 2.86,
+      "participation": 1.67,
+      "culture": 3.75,
+      "liberties": 0.29
+    }
+  },
+  {
+    "name": "Turkmenistan",
+    "score": 1.66,
+    "rank": 161,
+    "rankRaw": "161",
+    "rankChange": 1,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 0.79,
+      "participation": 2.22,
+      "culture": 5.0,
+      "liberties": 0.29
+    }
+  },
+  {
+    "name": "Sudan",
+    "score": 1.46,
+    "rank": 162,
+    "rankRaw": "162",
+    "rankChange": -4,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 0.0,
+      "participation": 1.11,
+      "culture": 5.63,
+      "liberties": 0.59
+    }
+  },
+  {
+    "name": "Syria",
+    "score": 1.32,
+    "rank": 163,
+    "rankRaw": "163",
+    "rankChange": 0,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 0.0,
+      "participation": 2.22,
+      "culture": 4.38,
+      "liberties": 0.0
+    }
+  },
+  {
+    "name": "Central African Republic",
+    "score": 1.18,
+    "rank": 164,
+    "rankRaw": "164",
+    "rankChange": 0,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 0.0,
+      "participation": 1.67,
+      "culture": 1.88,
+      "liberties": 2.35
+    }
+  },
+  {
+    "name": "North Korea",
+    "score": 1.08,
+    "rank": 165,
+    "rankRaw": "165",
+    "rankChange": 0,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 2.5,
+      "participation": 1.67,
+      "culture": 1.25,
+      "liberties": 0.0
+    }
+  },
+  {
+    "name": "Myanmar",
+    "score": 0.96,
+    "rank": 166,
+    "rankRaw": "166",
+    "rankChange": 0,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 0.0,
+      "participation": 1.67,
+      "culture": 3.13,
+      "liberties": 0.0
+    }
+  },
+  {
+    "name": "Afghanistan",
+    "score": 0.25,
+    "rank": 167,
+    "rankRaw": "167",
+    "rankChange": 0,
+    "regime": "authoritarian",
+    "categories": {
+      "electoralProcess": 0.0,
+      "government": 0.0,
+      "participation": 0.0,
+      "culture": 1.25,
+      "liberties": 0.0
+    }
+  }
+];
