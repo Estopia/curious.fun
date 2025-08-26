@@ -1,3 +1,4 @@
+import React, { ReactNode } from 'react'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import './globals.css'
@@ -12,7 +13,7 @@ export const metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: ReactNode
 }) {
   return (
     <html lang="en" className={inter.className}>
@@ -44,7 +45,7 @@ export default function RootLayout({
         <footer className="px-4 py-6 mt-16">
           <div className="max-w-5xl mx-auto">
             <p className="text-sm text-gray-500 text-center">
-              © curious.fun – made for fun
+              © {new Date().getFullYear()} curious.fun – made for fun
             </p>
           </div>
         </footer>

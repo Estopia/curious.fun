@@ -1,25 +1,26 @@
+import React from 'react'
 import Card from '../components/Card'
 
 const experiences = [
   {
     title: "Life in Weeks",
     description: "see your life in a 52×90 week grid",
-    href: "/life-in-weeks"
+    href: "/experiences/life-in-weeks"
   },
   {
     title: "Spend a Trillion Lite",
     description: "try to spend an absurd budget",
-    href: "/spend-trillion"
+    href: "/experiences/spend-trillion"
   },
   {
     title: "Internet Minute",
     description: "discover what happens every 60 seconds online",
-    href: "/internet-minute"
+    href: "/experiences/internet-minute"
   },
   {
     title: "Color Naming Game",
     description: "is it blue or green?",
-    href: "/color-naming"
+    href: "/experiences/color-naming"
   }
 ]
 
