@@ -11,7 +11,7 @@ export default function AboutPage() {
             and provide moments of wonder.
           </p>
           <p>
-            Inspired by the simple joy of discovering something new, each experience
+            Inspired by <a href="https://www.neal.fun" target="_blank" rel="noopener noreferrer">neal.fun</a>, and the simple joy of discovering something new, each experience
             is crafted to be playful, educational, and fun.
           </p>
         </div>
