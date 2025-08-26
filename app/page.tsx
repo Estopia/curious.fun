@@ -10,7 +10,7 @@ const experiences = [
   {
     title: "Spend a Trillion Lite",
     description: "try to spend an absurd budget",
-    href: "/experiences/spend-trillion"
+    href: "/experiences/spend-a-trillion-lite"
   },
   {
     title: "Internet Minute",
