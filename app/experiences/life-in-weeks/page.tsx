@@ -9,8 +9,24 @@ const MAX_YEARS = 90
 const TOTAL_WEEKS = MAX_YEARS * WEEKS_PER_YEAR
 
 function WeekGrid({ weeksLived }: { weeksLived: number }) {
-  // Create path strings for filled and empty weeks for better performance
-  let filledPath = ''
+  // Life stage colors for visual interest
+  const getLifeStageColor = (weekIndex: number) => {
+    const years = weekIndex / WEEKS_PER_YEAR
+    if (years < 5) return '#60a5fa' // childhood - blue
+    if (years < 18) return '#34d399' // youth - green  
+    if (years < 35) return '#fbbf24' // young adult - yellow
+    if (years < 65) return '#f472b6' // adult - pink
+    return '#a78bfa' // senior - purple
+  }
+
+  // Create path strings for different life stages
+  const stagePaths: { [key: string]: string } = {
+    '#60a5fa': '',
+    '#34d399': '',
+    '#fbbf24': '',
+    '#f472b6': '',
+    '#a78bfa': ''
+  }
   let emptyPath = ''
   
   for (let year = 0; year < MAX_YEARS; year++) {
@@ -21,7 +37,8 @@ function WeekGrid({ weeksLived }: { weeksLived: number }) {
       const pathData = `M${x + 2},${y} L${x + 8},${y} Q${x + 10},${y} ${x + 10},${y + 2} L${x + 10},${y + 8} Q${x + 10},${y + 10} ${x + 8},${y + 10} L${x + 2},${y + 10} Q${x},${y + 10} ${x},${y + 8} L${x},${y + 2} Q${x},${y} ${x + 2},${y} Z `
       
       if (weekIndex < weeksLived) {
-        filledPath += pathData
+        const color = getLifeStageColor(weekIndex)
+        stagePaths[color] += pathData
       } else {
         emptyPath += pathData
       }
@@ -29,15 +46,73 @@ function WeekGrid({ weeksLived }: { weeksLived: number }) {
   }
 
   return (
-    <div className="w-full max-w-full overflow-x-auto">
-      <svg
-        viewBox="0 0 624 1080"
-        className="w-full h-auto border border-neutral-800 rounded-lg bg-neutral-900/50"
-        aria-label="Life grid showing weeks lived and remaining"
-      >
-        {emptyPath && <path d={emptyPath} fill="#262626" />}
-        {filledPath && <path d={filledPath} fill="#d4d4d8" />}
-      </svg>
+    <div className="relative">
+      <div className="w-full max-w-full overflow-x-auto">
+        <svg
+          viewBox="0 0 624 1080"
+          className="w-full h-auto border border-neutral-800 rounded-xl bg-gradient-to-br from-neutral-900/80 to-neutral-800/40 backdrop-blur-sm transition-all duration-700 hover:shadow-2xl hover:shadow-blue-500/10"
+          aria-label="Life grid showing weeks lived and remaining"
+        >
+          <defs>
+            <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+              <feMerge> 
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/> 
+              </feMerge>
+            </filter>
+          </defs>
+          
+          {/* Empty weeks */}
+          {emptyPath && (
+            <path 
+              d={emptyPath} 
+              fill="#262626" 
+              className="transition-all duration-300"
+            />
+          )}
+          
+          {/* Filled weeks by life stage */}
+          {Object.entries(stagePaths).map(([color, path]) => 
+            path && (
+              <path
+                key={color}
+                d={path}
+                fill={color}
+                className="transition-all duration-500 opacity-80 hover:opacity-100"
+                filter="url(#glow)"
+                style={{ 
+                  animation: `fadeIn 0.8s ease-out ${Object.keys(stagePaths).indexOf(color) * 0.1}s both`
+                }}
+              />
+            )
+          )}
+        </svg>
+      </div>
+      
+      {/* Life stage legend */}
+      <div className="mt-4 flex flex-wrap justify-center gap-4 text-xs text-gray-400">
+        <div className="flex items-center gap-1">
+          <div className="w-2 h-2 rounded-full bg-blue-400"></div>
+          <span>0-5y</span>
+        </div>
+        <div className="flex items-center gap-1">
+          <div className="w-2 h-2 rounded-full bg-green-400"></div>
+          <span>5-18y</span>
+        </div>
+        <div className="flex items-center gap-1">
+          <div className="w-2 h-2 rounded-full bg-yellow-400"></div>
+          <span>18-35y</span>
+        </div>
+        <div className="flex items-center gap-1">
+          <div className="w-2 h-2 rounded-full bg-pink-400"></div>
+          <span>35-65y</span>
+        </div>
+        <div className="flex items-center gap-1">
+          <div className="w-2 h-2 rounded-full bg-purple-400"></div>
+          <span>65-90y</span>
+        </div>
+      </div>
     </div>
   )
 }
@@ -124,6 +199,33 @@ export default function LifeInWeeksPage() {
 
       {/* Main Content */}
       <main className="max-w-3xl mx-auto p-6">
+        <style jsx>{`
+          @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 0.8; transform: scale(1); }
+          }
+          
+          .slider {
+            background: #3b82f6;
+          }
+          
+          .slider::-webkit-slider-thumb {
+            appearance: none;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            border: 2px solid #3b82f6;
+            transition: all 0.2s ease;
+          }
+          
+          .slider::-webkit-slider-thumb:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+          }
+        `}</style>
         {/* Controls */}
         <div className="mb-8 space-y-6">
           {/* Mode Toggle */}
@@ -164,7 +266,7 @@ export default function LifeInWeeksPage() {
                   max={MAX_YEARS}
                   value={age}
                   onChange={(e) => handleAgeChange(parseInt(e.target.value))}
-                  className="w-full h-2 bg-neutral-800 rounded-lg appearance-none cursor-pointer slider"
+                  className="w-full h-3 bg-neutral-800 rounded-lg appearance-none cursor-pointer slider transition-all duration-200 hover:h-4"
                   aria-label="Age in years"
                 />
               </div>
@@ -203,11 +305,26 @@ export default function LifeInWeeksPage() {
           )}
 
           {/* Summary */}
-          <div className="p-4 bg-neutral-900/50 border border-neutral-800 rounded-lg">
-            <p className="text-center text-gray-300">
-              <span className="font-semibold text-white">{formatNumber(weeksLived)}</span> of{' '}
-              <span className="font-semibold text-white">{formatNumber(TOTAL_WEEKS)}</span> weeks passed
-            </p>
+          <div className="p-6 bg-gradient-to-r from-neutral-900/80 to-neutral-800/60 border border-neutral-700/50 rounded-xl backdrop-blur-sm">
+            <div className="text-center space-y-2">
+              <p className="text-lg text-gray-200">
+                <span className="font-bold text-2xl text-blue-400">
+                  {formatNumber(weeksLived)}
+                </span> 
+                <span className="text-gray-400"> of </span>
+                <span className="font-semibold text-white">{formatNumber(TOTAL_WEEKS)}</span> 
+                <span className="text-gray-400"> weeks passed</span>
+              </p>
+              <div className="w-full bg-neutral-800 rounded-full h-2 mt-3">
+                <div 
+                  className="bg-blue-500 h-2 rounded-full transition-all duration-700 ease-out"
+                  style={{ width: `${(weeksLived / TOTAL_WEEKS) * 100}%` }}
+                ></div>
+              </div>
+              <p className="text-sm text-gray-500 mt-2">
+                {((weeksLived / TOTAL_WEEKS) * 100).toFixed(1)}% of life visualized
+              </p>
+            </div>
           </div>
         </div>
 
