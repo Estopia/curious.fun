@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, Suspense } from 'react'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { hslToHex, stepToHsl } from '../../../lib/color'
@@ -60,7 +60,7 @@ function ProgressRing({ step, total }: { step: number; total: number }) {
   )
 }
 
-export default function ColorNamingPage() {
+function ColorNamingGame() {
   const router = useRouter()
   const searchParams = useSearchParams()
   
@@ -332,5 +332,13 @@ export default function ColorNamingPage() {
         </footer>
       </main>
     </div>
+  )
+}
+
+export default function ColorNamingPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-[#0f0f0f] text-white flex items-center justify-center">Loading...</div>}>
+      <ColorNamingGame />
+    </Suspense>
   )
 }

@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, Suspense } from 'react'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
 
@@ -135,7 +135,7 @@ function formatNumber(num: number): string {
   return num.toLocaleString()
 }
 
-export default function LifeInWeeksPage() {
+function LifeInWeeksGame() {
   const router = useRouter()
   const searchParams = useSearchParams()
   
@@ -339,5 +339,13 @@ export default function LifeInWeeksPage() {
         </footer>
       </main>
     </div>
+  )
+}
+
+export default function LifeInWeeksPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-[#0f0f0f] text-white flex items-center justify-center">Loading...</div>}>
+      <LifeInWeeksGame />
+    </Suspense>
   )
 }
